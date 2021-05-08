@@ -24,6 +24,7 @@ let Search = {
 
     after_render: async() => {
         let request = Utils.parseRequestURL();
+        let search = decodeURIComponent(request.id)
         
         const result = document.getElementById('section-search-h1');
         const lyrics = document.getElementById('song-lyrics');
@@ -31,12 +32,12 @@ let Search = {
         const modal = document.getElementById('myModal');
         const span = document.getElementById("close");
 
-        result.innerHTML = "Results for " + request.id;
+        result.innerHTML = "Results for " + search;
     
         const songList = await DB.getItems('songs');
         songList.forEach(async function(song, index)
             {
-                if(song.name.toLowerCase().includes(request.id) || song.author.toLowerCase().includes(request.id))
+                if(song.name.toLowerCase().includes(search) || song.author.toLowerCase().includes(search))
                 {
                     let picUrl = await DB.getSongPic(song.picture);
                     let songLi = document.createElement("li");

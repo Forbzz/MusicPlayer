@@ -102,7 +102,7 @@ let PlaylistEdit = {
                             <div class="playlist-song-image">
                                 <button class="song-play-button">
                                     <img class="song-image" src=${picUrl2}>
-                                    <img id=${songId} class="song-play-image" src="src/img/Play.png">
+                                    <img id=${songId} class="song-play-image" src="src/img/play.png">
                                 </button>
                             </div>
                             <p class="song-name">${song.name}</p>
