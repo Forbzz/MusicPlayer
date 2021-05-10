@@ -5,7 +5,7 @@ let Login = {
             <form class="auth-form">
                 <h2 class="auth-title">Login</h2>
                 <input id="email" class="auth-input" placeholder="email">
-                <input id="password" class="auth-input" placeholder="password">
+                <input id="password" type="password" class="auth-input" placeholder="password">
                 <button id="login" class="auth-button">Login</button>
             </form>
         </section>

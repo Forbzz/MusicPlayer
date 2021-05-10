@@ -7,8 +7,8 @@ let Register = {
             <form class="auth-form">
                 <h2 class="auth-title">Registration</h2>
                 <input id="email" class="auth-input" placeholder="email">
-                <input id="password" class="auth-input" placeholder="password">
-                <input id="rpassword" class="auth-input" placeholder="repeat password">
+                <input id="password" type="password" class="auth-input" placeholder="password">
+                <input id="rpassword" type="password" class="auth-input" placeholder="repeat password">
                 <button id="register" class="auth-button">Register</button>
             </form>
         </section>
