@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vitafy</title>
+        <link rel="stylesheet" type="text/css" href="src/style/artistStyle.css">
+        <link rel="stylesheet" type="text/css" href="src/style/authStyle.css">
+        <link rel="stylesheet" type="text/css" href="src/style/basicStyle.css">
+        <link rel="stylesheet" type="text/css" href="src/style/footerStyle.css">
+        <link rel="stylesheet" type="text/css" href="src/style/headerStyle.css">
+        <link rel="stylesheet" type="text/css" href="src/style/navigationStyle.css">
+        <link rel="stylesheet" type="text/css" href="src/style/playerStyle.css">
+        <link rel="stylesheet" type="text/css" href="src/style/playlistStyle.css">
+        <link rel="stylesheet" type="text/css" href="src/style/upload.css">
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+        <script type="module" type="text/js" src="app.js"></script>
+    </head>
+    <body>
+        <header id="header">
+        </header>
+         <main id="main" class="main-container">
+                
+        </main>
+        <div id="audio" class="audio-player">
+           
+        </div>
+        <footer id="footer" class="footer-container">
+
+        </footer>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyBzzR4a7J_mK87dykW8YVbLnIcxpqAtgUo",
+              authDomain: "test-2123d.firebaseapp.com",
+              databaseURL: "https://test-2123d-default-rtdb.europe-west1.firebasedatabase.app",
+              projectId: "test-2123d",
+              storageBucket: "test-2123d.appspot.com",
+              messagingSenderId: "623790226192",
+              appId: "1:623790226192:web:a2ae248511ed10a1a0c395"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            var database = firebase.database();
+          </script>
+    </body>
+    
+</html>

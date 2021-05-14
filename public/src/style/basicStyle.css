@@ -1,0 +1,59 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="range"]{
+	width: 100%;
+	position: absolute;
+	top: -5px;
+	left: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding-left: 25px;
+}
+
+@media screen and (max-device-width:720px)
+{
+	.section-container{
+        padding-left: 15px;
+    }
+}
+

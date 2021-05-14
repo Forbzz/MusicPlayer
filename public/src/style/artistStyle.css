@@ -1,0 +1,40 @@
+.artists-items{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.artist-item{
+    display: flex;
+    padding: 5px;
+    margin: 5px 5px;
+    width: 30%;
+    list-style-type: none;
+}
+
+.artist-item:hover{
+    transition: .2s ease;
+    transform: scale(1.05);
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px;
+}
+
+.artist-img{
+    border-radius: 20px;
+    width: 60px;
+}
+
+.artist-name-link{
+    margin: auto 10px;
+}
+
+.description-text{
+    font-weight: 500;
+}
+
+@media screen and (max-device-width:720px)
+{
+	.artist-item{
+        width: 40%;
+    }
+
+}

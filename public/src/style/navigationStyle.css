@@ -1,0 +1,29 @@
+.navigation{
+    display: flex;
+	flex-flow: wrap;
+}
+
+.navigation-container{
+    padding: 15px;
+	padding-left: 25px;
+}
+
+.navigation-link{
+	font-size: 25px;
+	color: #000000;
+	margin-right: 5%; 
+}
+
+@media screen and (max-device-width:1024px)
+{
+	.navigation-container{
+		padding: 0px 0px 0px 25px;
+	}
+
+	.navigation-link{
+		margin-top: 15px;
+	}
+
+}
+
+
