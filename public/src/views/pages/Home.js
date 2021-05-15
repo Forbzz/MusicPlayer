@@ -6,10 +6,10 @@ let Home = {
         let view =`
         <nav class="navigation-container">
         <div class="navigation">
-            <a class="navigation-link" href="#playlists-title">Playlists</a>
-            <a class="navigation-link" href="#genres-title">Genres</a>
-            <a class="navigation-link" href="#artists-title">Artists</a>
-            <a class="navigation-link" href="#albums-title">Albums</a>
+            <a id="link-playlist" class="navigation-link anchor" href="#playlists-title" >Playlists</a>
+            <a id="link-genre" class="navigation-link anchor" href="#genres-title" >Genres</a>
+            <a id="link-artist" class="navigation-link anchor" href="#artists-title" >Artists</a>
+            <a id="link-album" class="navigation-link anchor" href="#albums-title" >Albums</a>
             <a id="upload-ref" class="navigation-link" href="#/upload">Upload</a>
         </div>
     </nav>
@@ -59,10 +59,21 @@ let Home = {
         const uploadRef = document.getElementById('upload-ref');
         const playlistSection = document.getElementById('playlist-section');
 
+        const albumTo = document.getElementById('link-album')
+
         let genresList = await DB.getItems('genres');
         let artistsList = await DB.getItems('artists');
         let albumsList = await DB.getItems('albums');
-        let playlistList = await DB.getItems('playlists');
+        let playlistList = await DB.getItems('playlists');        
+        
+        Array.from(document.getElementsByClassName('anchor')).forEach(
+            anchor => {
+                anchor.onclick = function(e){
+                    e.preventDefault();
+                    document.querySelector(this.hash).scrollIntoView();
+                }
+            }
+        )
         
         firebase.auth().onAuthStateChanged(firebaseUser => {
             if(firebaseUser){
